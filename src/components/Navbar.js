@@ -42,7 +42,6 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  font-style: italic;
 `;
 const Right = styled.div`
   flex: 1;
@@ -73,7 +72,7 @@ const Navbar = () => {
           <MenuItem>Register</MenuItem>
           <MenuItem>Sign In</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={3} color="primary">
               <ShoppingCartOutlinedIcon />
             </Badge>
           </MenuItem>
