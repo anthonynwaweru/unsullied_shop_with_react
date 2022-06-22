@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import Announcements from '../components/Announcements';
 import Categories from '../components/Categories';
 import Footer from '../components/Footer';
@@ -7,9 +8,10 @@ import Newsletter from '../components/Newsletter';
 import Products from '../components/Products';
 import Slider from '../components/Slider';
 
+const Container = styled.div``;
 const Home = () => {
   return (
-    <div>
+    <Container>
       <Announcements />
       <Navbar />
       <Slider />
@@ -17,7 +19,7 @@ const Home = () => {
       <Products />
       <Newsletter />
       <Footer />
-    </div>
+    </Container>
   );
 };
 
