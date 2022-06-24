@@ -1,3 +1,4 @@
+import { Add, Remove } from '@mui/icons-material';
 import React from 'react';
 import styled from 'styled-components';
 import Announcements from '../components/Announcements';
@@ -60,10 +61,35 @@ const FilterColor = styled.div`
 
 const FilterSize = styled.select`
   padding: 5px;
-  margin: 0 5px;
+  margin-left: 10px;
 `;
 
 const FilterSizeOption = styled.option``;
+
+const AddContainer = styled.div`
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const AmountContainer = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+`;
+
+const Amount = styled.span`
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #a3320b;
+`;
+
+const Button = styled.button``;
 
 const Product = () => {
   return (
@@ -99,6 +125,14 @@ const Product = () => {
               </FilterSize>
             </Filter>
           </FilterContainer>
+          <AddContainer>
+            <AmountContainer>
+              <Remove />
+              <Amount>1</Amount>
+              <Add />
+            </AmountContainer>
+            <Button>Add</Button>
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
       <Newsletter />
