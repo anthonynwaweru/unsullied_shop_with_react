@@ -38,6 +38,7 @@ const Price = styled.span`
 const FilterContainer = styled.div`
   display: flex;
   width: 50%;
+  margin: 30px 0;
   justify-content: space-between;
 `;
 const Filter = styled.div`
