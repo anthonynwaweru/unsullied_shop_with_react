@@ -90,7 +90,17 @@ const Amount = styled.span`
   border: 1px solid #a3320b;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  padding: 15px;
+  border: 2px solid #a3320b;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  &:hover {
+    background-color: #a3320b;
+    color: white;
+  }
+`;
 
 const Product = () => {
   return (
@@ -128,11 +138,11 @@ const Product = () => {
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove />
+              <Remove style={{ cursor: 'pointer' }} />
               <Amount>1</Amount>
-              <Add />
+              <Add style={{ cursor: 'pointer' }} />
             </AmountContainer>
-            <Button>Add</Button>
+            <Button>Add to cart</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
